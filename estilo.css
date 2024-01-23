@@ -1,0 +1,187 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	background: url("imagens/capa.png"), 
+	url("imagens/ruido.png"), 
+	linear-gradient(50deg, #ff4169, #7c26f8);
+	background-attachment: fixed;
+	font-family: helvetica;
+}
+
+
+/*----------------------TOPO----------------------*/
+.topo{
+	background-color: rgba(0,0,0,0.7);
+}
+
+.navbar-light .navbar-toggler.botao-topo{
+	border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.barra{
+	width:1px;
+	background: white;
+	margin: 10px 5px;
+}
+/*----------------------TOPO----------------------*/
+
+/*----------------------CONTEÚDO----------------------*/
+#conteudo{
+	height:100%;
+	color:white;
+}
+
+.titulo-conteudo{
+	text-transform: uppercase;
+	letter-spacing: -0.08em;
+	font-size: 5em;
+	font-weight: 900;
+	margin: 50px 0px;
+}
+
+.btn.botao{
+	
+	border-radius: 30px;
+	padding: 10px 15px;
+	text-transform: uppercase;
+}
+
+.btn.botao.botao-roxo{
+	background: #7c25f8;
+}
+
+.btn.botao.botao-roxo:hover{
+	background: #6207e3;
+	color: white;
+}
+
+.btn.botao.botao-branco{
+	border: 1px solid white;
+}
+
+.btn.botao.botao-branco:hover{
+	background: white;
+	color:black;
+}
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev{
+	width: 5%;
+}
+/*----------------------CONTEÚDO----------------------*/
+
+/*----------------------SERVIÇOS----------------------*/
+#servicos{
+	background-color: white;
+	padding: 15px 0px;
+}
+
+#servicos h2, #servicos h3{
+	color:#7c25f8;
+}
+
+.albuns{
+	margin: 10px 0px;
+}
+/*----------------------SERVIÇOS----------------------*/
+
+/*----------------------RECURSOS----------------------*/
+#recursos{
+	padding: 15px 0px;
+}
+
+#recursos h2{
+	color: white;
+}
+
+#recursos h3{
+	color: #9bf0e1;
+}
+.rotacionar{
+	transform: rotate(30deg);
+	padding: 25px;
+	overflow-x: hidden;
+	
+}
+
+/*----------------------RECURSOS----------------------*/
+
+/*----------------------RODAPÉ----------------------*/
+footer{
+	background: black;
+	padding: 15px 0;
+	position: relative;
+}
+
+footer h6{
+	color: #919496;
+	text-transform: uppercase;
+}
+
+footer ul li a{
+	color: white;
+	font-size: 0.8em;
+}
+
+footer ul li a:hover{
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer a img{
+	margin: 0px 5px;
+}
+/*----------------------RODAPÉ----------------------*/
+/*----------------------MEDIA QUERY----------------------*/
+/*// Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) {
+	.titulo-conteudo{
+		font-size: 2em;
+	}
+
+	.btn.botao{
+		margin-bottom: 10px;
+	}
+	
+footer .spotify{
+		width: 20%;
+		margin: 10px 0px;
+	}
+
+	footer .redes-sociais{
+		width: 8%;
+		margin: 10px 0px;
+	}
+}
+/*// Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	.titulo-conteudo{
+		font-size: 3em;
+	}
+
+
+	footer .spotify{
+		width: 20%;
+		margin: 10px 0px;
+	}
+
+	footer .redes-sociais{
+		width: 8%;
+		margin: 10px 0px;
+	}
+}
+/*// Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/*// Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/*// Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) { 
+	.rotacionar{
+		margin-top: -50px;
+	}
+}
+/*----------------------MEDIA QUERY----------------------*/
